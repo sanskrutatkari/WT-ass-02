@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="logo.png"/>
+  <title>Register your favourite events in India</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+body {
+  background-image: url('back-ground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  background-color:none;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.grid-container1 li{
+text-align:left;
+font-size:25px;
+}
+img{
+  object-fit:cover;
+  border-radius: 10px;
+  height: 175px;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  background-color: none;
+  padding: 40px;
+  font-family:"Sofia";
+}
+
+.grid-container1 > div {
+  background-color: rgba(255, 250, 240, 0.95);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 40px;
+}
+/*Page 2 CSS*/
+
+.container2 {
+  background-color: black;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  }
+
+
+input[type=button] {
+  background-color: #808080;
+  color: white;
+  padding: 12px 20px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container2 label{
+  color: white;
+  font-size: 20px;
+}
+
+
+.grid-container2{
+display: grid;
+grid-template-columns: 50%;
+grid-template-rows: auto;
+grid-gap:10px;
+justify-content: center;
+margin-top: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #A9A9A9;
+}
+/*Page 3 CSs*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  /*background-color: rgba(0, 0, 0,0,0.9);*/
+  color: white;
+}
+tr:nth-child(odd){
+  color: white;
+  background-color: orangered;
+}
+tr:nth-child(1){
+  background-color: orangered;
+  color:white;
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed;width: 100%; z-index:999; background-color: blue;">
+  <a class="navbar-brand" href="#"><img src="logo.png" style="width:60px; height:60px;object-fit:contain; background-color:white;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="font-family: helvetica;">
+    <ul class="navbar-nav" style="font-size: 20px;">
+      <li class="nav-item active">
+        <a class="nav-link" onclick="page1()" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="page2()" href="#page2">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="page3()" href="#page3">History</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Page 1-->
+<div id="page1">
+<br><br><br><br><div style="background-size: cover;padding:40px 10px;">
+<h1 style="text-align:center; color:white;font-family: 'helvetica';font-size:50px;font-weight:400;background-color:orangered;">Presenting You 'The Digital Music Festival'</h1></div>
+<div class="grid-container">
+  <div><img src="Tomorrowland.jpg" alt="Tomorrowland" style="width:100%"></div>
+  <div><img src="sunburn.jpg" alt="sunburn" style="width:100%"></div>
+  <div><img src="UMF.jpg" alt="UMF" style="width:100%"></div>  
+  <div><img src="EDC.jpg" alt="EDC" style="width:100%"></div>
+</div>
+<br>
+<div style="background-size: cover;padding:40px 10px;">
+<h3 style="text-align:center; color:white;font-family: 'helvetica';font-size:50px;font-weight:400;background-color:orangered;">Register your favourite digital music festival by clicking on register</h3></div>
+</div>
+<!-- Page 1 End-->
+<!--Page 2-->
+<div id="page2" style="display: none;">
+ <br><br><br><br>
+<div style="background-size: cover;padding:100px 10px;"><h1 style="text-align:left; color:black;font-family:'Sofia';font-size:55px;font-weight:600;">&nbsp&nbsp&nbsp&nbspHello party people,</h1></div>
+<div class="container2">
+<div class="grid-container2" id="form">
+<div>
+    <h1 style="font-size: 30px;color:white; text-align:center;">Register for your favourite music Festival</h1>
+</div>
+  <form>
+<div>
+    <label for="fname">Full Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Your Full Name">
+</div>
+<div>
+    <label for="contact">Mobile No:</label>
+    <input type="text" id="contact" name="contact" placeholder="Your Mobile No.">
+</div>
+<div>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Your Email ID">
+</div>
+<div>
+<label class="label">Select Gender</label>
+<div style="text-align:center;">
+<label class="radio-inline" style="padding:10px 20px;">
+      <input type="radio" name="gender" id="male">&nbspMale</label>
+    <label class="radio-inline" style="padding:10px;">
+      <input type="radio" name="gender" id="female">&nbspFemale</label>
+    <label class="radio-inline" style="padding:10px;">
+      <input type="radio" name="gender" id="other">&nbspOther</label>
+</div>
+</div>
+<div>
+<label class="label">Select Festival:</label>
+<select class="form-control" id="category">
+  <option disabled="disabled" selected="selected">Choose options</option>
+  <option>Tomorrowland, Belgiun</option>
+  <option>Sunburn, Goa</option>
+  <option>UMF, India</option>
+  <option>EDC, Las Vegas</option>
+</select>
+</div>
+<div>
+    <label for="query">Previous Music Festivals:</label>
+    <textarea id="instructions" name="instructions" placeholder="Your Previous Music festivals separated by comma.." style="height:200px"></textarea>
+</div>
+<br>
+<div class="form-check" style="text-align:center;">
+  <input class="form-check-input" type="checkbox" value="" id="defaultcheck">
+  <label class="form-check-label" for="defaultCheck1">&nbsp&nbspTerms and Conditions</label>
+</div>
+<div style="text-align: right;">
+    <input type="button" value="Submit" onclick="registration()">
+</div>
+
+</form>
+
+</div>
+
+</div> 
+</div>
+<!--Page 2 End-->
+<!--Page 3-->
+<div id="page3" style="display: none;">
+<br><br><br><br><br><br>
+<table id="table" border="1" cellpadding="2">
+  <tr>
+    <td>Full Name</td>
+    <td>Mobile No.</td>
+    <td>Email</td>
+    <td>Gender</td>
+    <td>Festival</td>
+    <td>Previously attended</td>
+    <td>Registration Date</td>
+  </tr>
+</table>
+</div>
+<!-- Page 3 End-->
+
+<script>
+
+function validation(){
+  var valid= true,
+    fname = document.getElementById("fname").value,
+    contact = document.getElementById("contact").value,
+    email = document.getElementById("email").value,
+    instructions = document.getElementById("instructions").value;
+    if (document.getElementById('male').checked) {
+    g = "male";
+    }else if (document.getElementById('female').checked) {
+    g = "female";  
+  } else if (document.getElementById('other').checked) {
+    g ="other";
+  }
+    var c = document.getElementById("category");
+    var cat = c.options[c.selectedIndex].text; 
+
+    var atposition=email.indexOf("@");  
+    var dotposition=email.lastIndexOf(".");
+
+if (fname === "") {
+    alert("Name cannot be empty");
+    valid = false;
+  } else if (isNaN(fname)==false){
+    alert("Name cannot be numeric");
+    valid=false;
+  } else if (isNaN(contact)==true) {
+    alert("Enter a Valid Phone Number (Only digits) ");
+    valid = false;
+  } else if (contact.length !=10 ) {
+    alert("Enter a Valid Phone Number (10 digit only)");
+    valid = false;
+  } else if (email === "") {
+    alert("Email id cannot be empty");
+    valid = false;
+  } else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
+    alert("Invalid Email id");
+    valid = false;
+  } else if  (!(document.getElementById('male').checked) && !(document.getElementById('female').checked) && !(document.getElementById('other').checked)) {
+    alert("Select a Gender .")
+    valid=false;
+  } else if (!(document.getElementById("defaultcheck").checked)){
+    alert("Agree To Terms And Conditions Please")
+    valid=false;
+  }
+
+  return valid;
+
+}
+function registration(){
+    if (validation()) {
+    alert('Form Successfully Submitted. The verification mail has been sent to you')
+    fname = document.getElementById("fname").value,
+    contact = document.getElementById("contact").value,
+    email = document.getElementById("email").value,
+    instructions = document.getElementById("instructions").value;
+    if (document.getElementById('male').checked) {
+    g = 'male';
+    }else if (document.getElementById('female').checked) {
+      g = 'female';
+  } else if (document.getElementById('other').checked) {
+    g = 'other';
+  }
+    var c = document.getElementById("category");
+    var cat = c.options[c.selectedIndex].text; 
+var date= new Date();
+    var table = document.getElementById("table");
+
+    var newRow = table.insertRow(table.rows.length),
+      cell1 = newRow.insertCell(0),
+      cell2 = newRow.insertCell(1),
+      cell3 = newRow.insertCell(2),
+      cell4 = newRow.insertCell(3),
+      cell5 = newRow.insertCell(4),
+      cell6 = newRow.insertCell(5),
+      cell7 = newRow.insertCell(6);
+
+
+    cell1.innerHTML = fname;
+    cell2.innerHTML = contact;
+    cell3.innerHTML = email;
+    cell4.innerHTML = g;
+    cell5.innerHTML = cat;
+    cell6.innerHTML = instructions;
+    cell7.innerHTML = date;
+
+    sessionStorage.setItem("fname", fname);
+    sessionStorage.setItem("contact", contact);
+    sessionStorage.setItem("email", email);
+    sessionStorage.setItem("g", g);
+    sessionStorage.setItem("instructions", instructions);
+    sessionStorage.setItem("cat", cat);
+    sessionStorage.setItem("date", date);
+
+
+}
+}
+//Display Code
+function page1() {
+  var x = document.getElementById("page1");
+  var y = document.getElementById("page2");
+  var z = document.getElementById("page3");
+    
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "none";
+   
+}
+function page2() {
+  var x = document.getElementById("page1");
+  var y = document.getElementById("page2");
+  var z = document.getElementById("page3");
+    
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+   
+}
+function page3() {
+  var x = document.getElementById("page1");
+  var y = document.getElementById("page2");
+  var z = document.getElementById("page3");
+    
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+   
+}
+</script>
+</body>
+</html>
